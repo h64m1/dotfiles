@@ -2,7 +2,7 @@
 # Load zsh files
 for file in "color" "bindkey" "function" "autoload" "setopt" "zstyle" "prompt" "alias"
 do
-  zshfile=.zsh/${file}.zsh
+  zshfile=~/.zsh/${file}.zsh
   echo "source ${zshfile}"
   source ${zshfile}
 done
