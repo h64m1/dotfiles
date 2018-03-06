@@ -28,7 +28,9 @@ if !has('gui_running')
   set t_Co=256
 endif
 
-let g:solarized_termcolors=256
-set background=dark
-" colorscheme solarized
 colorscheme codedark
+
+" use solarized dark for markdown
+let g:solarized_termcolors=256
+autocmd BufWinEnter,FileType markdown setlocal background=dark
+autocmd BufWinEnter,FileType markdown colorscheme solarized
