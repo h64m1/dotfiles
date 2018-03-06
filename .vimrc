@@ -21,7 +21,7 @@ call plug#end()
 syntax enable
 
 " setup for lightline-vim
-set laststatus = 2
+set laststatus=2
 if !has('gui_running')
   set t_Co=256
 endif
