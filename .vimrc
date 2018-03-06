@@ -1,9 +1,4 @@
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-syntax enable
-set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
 
 " Reload .vimrc and :PlugInstall to install plugins.
 " Specify a directory for plugins
@@ -22,3 +17,15 @@ Plug 'https://github.com/itchyny/lightline.vim'
 
 " Initialize plugin system
 call plug#end()
+
+syntax enable
+
+" setup for lightline-vim
+set laststatus = 2
+if !has('gui_running')
+  set t_Co=256
+endif
+
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
