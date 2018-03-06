@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 Plug 'https://github.com/itchyny/lightline.vim'
 Plug 'https://github.com/pangloss/vim-javascript'
+Plug 'https://github.com/tomasiser/vim-code-dark'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
@@ -29,4 +30,5 @@ endif
 
 let g:solarized_termcolors=256
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+colorscheme codedark
