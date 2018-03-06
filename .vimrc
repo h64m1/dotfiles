@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 Plug 'https://github.com/itchyny/lightline.vim'
+Plug 'https://github.com/pangloss/vim-javascript'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
