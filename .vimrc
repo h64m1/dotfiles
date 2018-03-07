@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/itchyny/lightline.vim'
 Plug 'https://github.com/pangloss/vim-javascript'
 Plug 'https://github.com/tomasiser/vim-code-dark'
+Plug 'https://github.com/leafgarland/typescript-vim'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Plug 'junegunn/vim-easy-align'
