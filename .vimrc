@@ -34,3 +34,9 @@ colorscheme codedark
 let g:solarized_termcolors=256
 autocmd BufWinEnter,FileType markdown setlocal background=dark
 autocmd BufWinEnter,FileType markdown colorscheme solarized
+
+" set expandtab
+set tabstop=2
+set autoindent
+set smartindent
+set shiftwidth=2
