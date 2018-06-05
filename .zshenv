@@ -31,7 +31,10 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 #_______________________________________________________________________________
 # swift
-export PATH=/Library/Developer/Toolchains/swift-latest/usr/bin:${PATH}
+# SWIFT_BIN=/Library/Developer/Toolchains/swift-latest/usr/bin
+SWIFT_BIN=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+export PATH=${SWIFT_BIN}:${PATH}
+#export PRETTIER_SWIFT_SWIFTC=${SWIFT_BIN}/swiftc
 
 #_______________________________________________________________________________
 # Load pyenv automatically by appending the following to your profile:
