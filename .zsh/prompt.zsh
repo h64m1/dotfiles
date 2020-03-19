@@ -2,9 +2,9 @@
 # prompt
 
 # to show git branch in prompt
-if [ -f ${HOME}/.zsh/git-completion.zsh ]; then
-        zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.zsh
-fi
+#if [ -f ${HOME}/.zsh/git-completion.zsh ]; then
+#        zstyle ':completion:*:*:git:*' script ~/.zsh/completion/git-completion.zsh
+#fi
 
 if [ -f ${HOME}/.zsh/git-prompt.sh ]; then
         source ${HOME}/.zsh/git-prompt.sh
