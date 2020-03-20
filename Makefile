@@ -1,3 +1,10 @@
+# Makefileの関数
+# https://qiita.com/chibi929/items/b8c5f36434d5d3fbfa4a
+# $(filter PATTERN...,TEXT)
+#   TEXT内からPATTERNの文字列に一致する要素を取得
+# $(filter-out PATTERN...,TEXT)
+#   TEXT内からPATTERNの文字列に一致しない要素を取得 (filterの逆)
+
 # 除外するdotfiles
 EXCLUDES := .DS_Store .git
 # directory (. と..)を除くdotfiles
