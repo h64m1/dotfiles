@@ -11,3 +11,10 @@ alias chrome_local="open -a Google\ Chrome --args -allow-file-access-from-files"
 alias git_rm_remote_branch="git push orign :[remote branch name]"
 alias git_sync_branch="git remote prune origin"
 
+# copy prettier configuration file to current directory
+copy-prettierrc() {
+  cp -v $HOME/.prettierrc .
+  echo "prettier configuration ..."
+  cat .prettierrc
+}
+
