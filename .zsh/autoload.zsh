@@ -14,3 +14,8 @@ compinit
 # Use colors
 autoload -Uz colors
 colors
+
+#_______________________________________________________________________________
+# GitHub CLIのコマンド補完
+eval "$(gh completion -s zsh)"
+
