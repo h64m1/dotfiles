@@ -11,6 +11,12 @@ alias chrome_local="open -a Google\ Chrome --args -allow-file-access-from-files"
 alias git_rm_remote_branch="git push orign :[remote branch name]"
 alias git_sync_branch="git remote prune origin"
 
+# zenn
+alias zenn_cli_preview="npx zenn preview"
+
+# sdkroot
+alias sdkroot="xcrun --sdk macosx --show-sdk-path"
+
 # copy prettier configuration file to current directory
 copy-prettierrc() {
   cp -v $HOME/.prettierrc .
