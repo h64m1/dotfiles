@@ -51,3 +51,8 @@ export EDITOR=vim
 export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
+
+#_______________________________________________________________________________
+# fzf settings
+export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
+
