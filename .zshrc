@@ -7,3 +7,4 @@ do
   source ${zshfile}
 done
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
