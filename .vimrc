@@ -36,6 +36,11 @@ let g:solarized_termcolors=256
 autocmd BufWinEnter,FileType markdown setlocal background=dark
 autocmd BufWinEnter,FileType markdown colorscheme solarized
 
+augroup SyntaxSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
+
 set expandtab
 set tabstop=2
 set autoindent
