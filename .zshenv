@@ -38,9 +38,9 @@ export PATH=${SWIFT_BIN}:${PATH}
 
 #_______________________________________________________________________________
 # Load pyenv automatically by appending the following to your profile:
-if type pyenv 1> /dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# if type pyenv 1> /dev/null 2>&1; then
+#   eval "$(pyenv init -)"
+# fi
 
 #_______________________________________________________________________________
 # editor
