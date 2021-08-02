@@ -1,6 +1,13 @@
 #_______________________________________________________________________________
 # downloads git-completion.zsh
 # curl -o ~/.zsh/completion --create-dirs -O https://raw.github.com/git/git/master/contrib/completion/git-completion.zsh
+: "Multi-user Hack" && {
+    compaudit > /dev/null 2>&1 || {
+        echo "Need to change file ownership of zsh completion"
+        sudo -v || exit
+        compaudit 2>/dev/null | sudo xargs chown $(whoami)
+    }
+}
 
 #_______________________________________________________________________________
 # function autoload
