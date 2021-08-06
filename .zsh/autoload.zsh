@@ -24,5 +24,8 @@ colors
 
 #_______________________________________________________________________________
 # GitHub CLIのコマンド補完
-eval "$(gh completion -s zsh)"
+if (( $+commands[gh] )); then
+  echo "gh is available"
+  eval "$(gh completion -s zsh)"
+fi
 
