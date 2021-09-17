@@ -56,3 +56,4 @@ export SAVEHIST=100000
 # fzf settings
 export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
 
+. "$HOME/.cargo/env"
