@@ -47,6 +47,10 @@ export PATH=${SWIFT_BIN}:${PATH}
 export EDITOR=vim
 
 #_______________________________________________________________________________
+# xcode
+export SDKROOT=`xcrun --sdk macosx --show-sdk-path`
+
+#_______________________________________________________________________________
 # history
 export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
