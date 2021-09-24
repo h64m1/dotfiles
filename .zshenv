@@ -66,13 +66,13 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
 #_______________________________________________________________________________
 # git completion
 COMPLETION_DIR=$HOME/.zsh/completion
-if [ ! -f $HOME/.zsh/completion/git-completion.bash ]; then
+if [ ! -f $COMPLETION_DIR/.git-completion.bash ]; then
   echo "install git-completion.bash ..."
   mkdir -pv $COMPLETION_DIR
   wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O $COMPLETION_DIR/.git-completion.bash
 fi
 
-if [ ! -f $HOME/.zsh/completion/git-completion.zsh ]; then
+if [ ! -f $COMPLETION_DIR/.git-completion.zsh ]; then
   echo "install git-completion.zsh ..."
   wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -O $COMPLETION_DIR/.git-completion.zsh
 fi
