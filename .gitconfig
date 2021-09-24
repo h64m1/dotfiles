@@ -1,0 +1,27 @@
+[user]
+	name = hmasui
+	email = 29457120+h64m1@users.noreply.github.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	sw = switch
+	ci = commit -v
+	br = branch
+	co = checkout
+	lo = log
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[merge]
+	ff = false
+[pull]
+	ff = only
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
