@@ -8,3 +8,5 @@ do
 done
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f ~/.zsh/completion/git-prompt.sh ] && source ~/.zsh/completion/git-prompt.sh
