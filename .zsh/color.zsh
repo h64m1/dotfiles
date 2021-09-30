@@ -5,3 +5,6 @@ if [ ! -f ~/.dircolors.256dark ]; then
 fi
 eval $(dircolors ~/.dircolors.256dark)
 
+# set foreground, background color for zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#148383,bg=#002b36,bold,underline"
+
