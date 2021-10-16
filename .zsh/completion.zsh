@@ -5,6 +5,7 @@ if (( $+commands[deno] )); then
     echo "deno is available. Create completion file: ~/.zsh/_deno"
     deno completions zsh > $HOME/.zsh/_deno
   fi
+fi
 
 #_______________________________________________________________________________
 # zsh autosuggestions
