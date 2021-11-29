@@ -6,5 +6,6 @@ Plug 'https://github.com/jacoborus/tender.vim'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/mhinz/vim-startify'
+Plug 'https://github.com/cespare/vim-toml', { 'branch': 'main' }
 
 call plug#end()
