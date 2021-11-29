@@ -1,3 +1,7 @@
+# zsh
 .zsh/completion
 .zsh/_deno
 .zsh/zsh-autosuggestions/
+
+# cargo
+.cargo
