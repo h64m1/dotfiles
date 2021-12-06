@@ -12,7 +12,9 @@ unsetopt global_rcs
 
 #_______________________________________________________________________________
 # coreutils
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+# export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+# M1 mac
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
 #_______________________________________________________________________________
@@ -32,8 +34,8 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 #_______________________________________________________________________________
 # swift
 # SWIFT_BIN=/Library/Developer/Toolchains/swift-latest/usr/bin
-SWIFT_BIN=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-export PATH=${SWIFT_BIN}:${PATH}
+# SWIFT_BIN=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+# export PATH=${SWIFT_BIN}:${PATH}
 #export PRETTIER_SWIFT_SWIFTC=${SWIFT_BIN}/swiftc
 
 #_______________________________________________________________________________
@@ -71,15 +73,16 @@ if [ ! -d $COMPLETION_DIR ]; then
 fi
 
 if [ ! -f $COMPLETION_DIR/git-completion.bash ]; then
-  wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O $COMPLETION_DIR/git-completion.bash
+  curl -o $COMPLETION_DIR/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash 
+
 fi
 
 if [ ! -f $COMPLETION_DIR/git-completion.zsh ]; then
-  wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -O $COMPLETION_DIR/git-completion.zsh
+  curl -o $COMPLETION_DIR/git-completion.zsh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh 
 fi
 
 if [ ! -f $COMPLETION_DIR/git-prompt.sh ]; then
-  wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O $COMPLETION_DIR/git-prompt.sh
+  curl -o $COMPLETION_DIR/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
 
 #_______________________________________________________________________________
