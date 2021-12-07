@@ -38,7 +38,7 @@ if has('mac')
       autocmd!
       autocmd InsertLeave * :call system(g:imeoff)
     augroup END
-    noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
+"    noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
 endif
 
 " use solarized dark for markdown
