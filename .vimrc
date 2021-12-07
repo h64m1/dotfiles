@@ -31,6 +31,16 @@ endif
 
 colorscheme codedark
 
+if has('mac')
+    set ttimeoutlen=1
+    let g:imeoff = 'osascript -e "tell application \"System Events\" to key code 102"'
+    augroup MyIMEGroup
+      autocmd!
+      autocmd InsertLeave * :call system(g:imeoff)
+    augroup END
+    noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
+endif
+
 " use solarized dark for markdown
 let g:solarized_termcolors=256
 autocmd BufWinEnter,FileType markdown setlocal background=dark

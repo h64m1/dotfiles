@@ -1,9 +1,11 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+
 Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/itchyny/lightline.vim'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/jacoborus/tender.vim'
+
 
 call plug#end()
 
@@ -13,6 +15,16 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 " set expandtab
+
+if has('mac')
+    set ttimeoutlen=1
+    let g:imeoff = 'osascript -e "tell application \"System Events\" to key code 102"'
+    augroup MyIMEGroup
+      autocmd!
+      autocmd InsertLeave * :call system(g:imeoff)
+    augroup END
+    noremap <silent> <ESC> <ESC>:call system(g:imeoff)<CR>
+endif
 
 " If you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
