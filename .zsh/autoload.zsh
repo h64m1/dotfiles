@@ -1,21 +1,21 @@
 #_______________________________________________________________________________
 # Macでマルチユーザの場合の設定
 # 参考: https://qiita.com/suin/items/7b49abadc387801e8d6f
-case ${OSTYPE} in
-  darwin*)
-    echo "OS: Mac"
-    : "Multi-user Hack" && {
-      compaudit > /dev/null 2>&1 || {
-        echo "Need to change file ownership of zsh completion"
-        sudo -v || exit
-        compaudit 2>/dev/null | sudo xargs chown $(whoami)
-      }
-    }
-    ;;
-  linux*)
-    echo "OS: Linux"
-    ;;
-esac
+# case ${OSTYPE} in
+#   darwin*)
+#     echo "OS: Mac"
+#     : "Multi-user Hack" && {
+#       compaudit > /dev/null 2>&1 || {
+#         echo "Need to change file ownership of zsh completion"
+#         sudo -v || exit
+#         compaudit 2>/dev/null | sudo xargs chown $(whoami)
+#       }
+#     }
+#     ;;
+#   linux*)
+#     echo "OS: Linux"
+#     ;;
+# esac
 
 #_______________________________________________________________________________
 # function autoload
