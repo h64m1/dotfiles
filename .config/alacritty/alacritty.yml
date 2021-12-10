@@ -1,6 +1,69 @@
 
-font:
-  size: 14
 
 env:
   TERM: alacritty
+
+window:
+  padding:
+    x: 5
+    y: 5
+  decorations: full
+
+dynamic_title: true
+
+scrolling:
+  history: 10000
+
+font:
+  size: 14
+
+# The 'Dark dimmed' colorscheme from Github.
+colors:
+  primary:
+    background: '#2d333b'
+    foreground: '#adbac7'
+  normal:
+    black:   '#2d333b'
+    red:     '#f47067'
+    green:   '#8ddb8c'
+    yellow:  '#f69d50'
+    blue:    '#6cb6ff'
+    magenta: '#dcbdfb'
+    cyan:    '#96d0ff'
+    white:   '#adbac7'
+  bright:
+    black:   '#768390'
+    red:     '#f47067'
+    green:   '#8ddb8c'
+    yellow:  '#f69d50'
+    blue:    '#6cb6ff'
+    magenta: '#dcbdfb'
+    cyan:    '#96d0ff'
+    white:   '#adbac7'
+
+shell:
+  program: /bin/zsh
+  args:
+    - -c
+    - "/opt/homebrew/bin/tmux a -t 0 || /opt/homebrew/bin/tmux"
+
+key_bindings:
+  - { key: Comma,     mods: Command,      command:
+      {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
+  - { key: D,         mods: Command,       chars: "\x11\x64" } # detach a session
+  - { key: N,         mods: Command,       action: SpawnNewInstance       }
+  - { key: T,         mods: Command,       chars: "\x11\x63" } # ctrl+q, c
+  - { key: Backslash, mods: Command,       chars: "\x11\x25" } # ctrl+q, %
+  - { key: Backslash, mods: Command|Shift, chars: "\x11\x22" } # ctrl+q, "
+  - { key: W,         mods: Command,       chars: "\x11\x78" } # ctrl+q, x
+  - { key: Return,    mods: Command,      action: ToggleFullScreen       }
+  - { key: Key0,     mods: Command, action: ResetFontSize                }
+  - { key: Equals,   mods: Command, action: IncreaseFontSize             }
+  - { key: Minus,    mods: Command, action: DecreaseFontSize             }
+  - { key: Space,     mods: Alt,          chars: " "                     }
+  - { key: Back, mods: Super, chars: "\x15" } # delete word/line
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # one word left
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       } # one word right
+  - { key: Left,     mods: Command, chars: "\x1bOH",   mode: AppCursor   } # Home
+  - { key: Right,    mods: Command, chars: "\x1bOF",   mode: AppCursor   } # End
+
