@@ -49,10 +49,11 @@ shell:
 key_bindings:
   - { key: Comma,     mods: Command,      command:
       {program: "sh", args: ["-c","open ~/.config/alacritty/alacritty.yml"]}     }
-  - { key: N,         mods: Command,      action: SpawnNewInstance       }
+  - { key: D,         mods: Command,       chars: "\x11\x64" } # detach a session
+  - { key: N,         mods: Command,       action: SpawnNewInstance       }
   - { key: T,         mods: Command,       chars: "\x11\x63" } # ctrl+q, c
-  - { key: D,         mods: Command,       chars: "\x11\x25" } # ctrl+q, %
-  - { key: D,         mods: Command|Shift, chars: "\x11\x22" } # ctrl+q, "
+  - { key: Backslash, mods: Command,       chars: "\x11\x25" } # ctrl+q, %
+  - { key: Backslash, mods: Command|Shift, chars: "\x11\x22" } # ctrl+q, "
   - { key: W,         mods: Command,       chars: "\x11\x78" } # ctrl+q, x
   - { key: Return,    mods: Command,      action: ToggleFullScreen       }
   - { key: Key0,     mods: Command, action: ResetFontSize                }
