@@ -42,9 +42,9 @@ colorscheme codedark
 " endif
 
 " use solarized dark for markdown
-let g:solarized_termcolors=256
-autocmd BufWinEnter,FileType markdown setlocal background=dark
-autocmd BufWinEnter,FileType markdown colorscheme solarized
+" let g:solarized_termcolors=256
+" autocmd BufWinEnter,FileType markdown setlocal background=dark
+" autocmd BufWinEnter,FileType markdown colorscheme solarized
 
 augroup SyntaxSettings
     autocmd!
