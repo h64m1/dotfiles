@@ -44,7 +44,8 @@ colors:
 shell:
   program: /bin/zsh
   args:
-    - --login
+    - -c
+    - "/opt/homebrew/bin/tmux a -t 0 || /opt/homebrew/bin/tmux"
 
 key_bindings:
   - { key: Comma,     mods: Command,      command:
