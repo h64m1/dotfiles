@@ -3,6 +3,8 @@
 source $HOME/.config/nvim/plugin.vim
 " coc-analyzer
 source $HOME/.config/nvim/coc.vim
+" vim-airline
+source $HOME/.config/nvim/vim-airline.vim
 
 " base settings
 set relativenumber
