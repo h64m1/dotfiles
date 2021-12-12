@@ -1,7 +1,4 @@
 .zsh/zsh-autosuggestions/
 .zsh/completion
 
-# configuration
-.config/coc
-.config/gcloud
-.config/memo
+.cargo
