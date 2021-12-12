@@ -19,8 +19,11 @@ export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
 #_______________________________________________________________________________
 # golang
-export GOPATH=$HOME/go
+export GOPATH=$HOME/go/1.17.3
 export PATH=$GOPATH/bin:$PATH
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
 
 #_______________________________________________________________________________
 # python
@@ -84,6 +87,10 @@ fi
 if [ ! -f $COMPLETION_DIR/git-prompt.sh ]; then
   curl -o $COMPLETION_DIR/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
+
+# google cloud
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 
 #_______________________________________________________________________________
 # cargo
