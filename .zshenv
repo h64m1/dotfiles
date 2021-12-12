@@ -88,9 +88,6 @@ if [ ! -f $COMPLETION_DIR/git-prompt.sh ]; then
   curl -o $COMPLETION_DIR/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
 
-# google cloud
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
 
 #_______________________________________________________________________________
 # cargo
