@@ -12,3 +12,6 @@ done
 [ -f ~/.zsh/completion/git-prompt.sh ] && source ~/.zsh/completion/git-prompt.sh
 
 [ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# local settings
+[ -f ~/.zsh/zshrc.local ] && source ~/.zsh/zshrc.local
