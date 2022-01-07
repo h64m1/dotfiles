@@ -5,6 +5,8 @@ source $HOME/.config/nvim/plugin.vim
 source $HOME/.config/nvim/coc.vim
 " vim-airline
 source $HOME/.config/nvim/vim-airline.vim
+" rust
+source $HOME/.config/nvim/rust.vim
 
 " base settings
 set relativenumber
@@ -29,5 +31,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Theme
 syntax enable
+filetype plugin indent on
+
 colorscheme tender
 

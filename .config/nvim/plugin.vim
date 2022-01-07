@@ -24,5 +24,7 @@ Plug 'https://github.com/simeji/winresizer'
 " indent
 Plug 'https://github.com/Yggdroot/indentLine'
 
+" rust
+Plug 'https://github.com/rust-lang/rust.vim'
 
 call plug#end()

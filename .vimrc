@@ -22,6 +22,8 @@ Plug 'https://github.com/leafgarland/typescript-vim'
 call plug#end()
 
 syntax enable
+filetype plugin indent on
+
 
 " setup for lightline-vim
 set laststatus=2

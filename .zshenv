@@ -54,7 +54,6 @@ export EDITOR=vim
 #_______________________________________________________________________________
 # xcode
 if (( $+commands[xcrun] )); then
-  echo "Mac: xcrun setting"
   export SDKROOT=`xcrun --sdk macosx --show-sdk-path`
 fi
 
