@@ -9,11 +9,15 @@ source $HOME/.config/nvim/vim-airline.vim
 source $HOME/.config/nvim/rust.vim
 
 " base settings
-set relativenumber
+set number norelativenumber
 set smarttab
 set cindent
 set tabstop=2
 set shiftwidth=2
+
+" map <Esc> :set number
+autocmd InsertEnter * :set nonumber relativenumber
+autocmd InsertLeave * :set number norelativenumber
 
 " カーソル位置記憶
 augroup vimrcEx
