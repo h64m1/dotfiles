@@ -9,4 +9,3 @@ mkdir ~/.zsh # create a folder to save your completions. it can be anywhere
 deno completions zsh > ~/.zsh/_deno
 ```
 
-
