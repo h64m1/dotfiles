@@ -15,9 +15,11 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 
-" map <Esc> :set number
-autocmd InsertEnter * :set nonumber relativenumber
-autocmd InsertLeave * :set number norelativenumber
+if !exists('g:vscode')
+  " map <Esc> :set number
+  autocmd InsertEnter * :set nonumber relativenumber
+  autocmd InsertLeave * :set number norelativenumber
+end
 
 " カーソル位置記憶
 augroup vimrcEx
@@ -27,7 +29,7 @@ augroup END
 
 " If you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
- set termguicolors
+  set termguicolors
 endif
 
 " For Neovim 0.1.3 and 0.1.4
