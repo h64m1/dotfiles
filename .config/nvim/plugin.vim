@@ -27,4 +27,7 @@ Plug 'https://github.com/Yggdroot/indentLine'
 " rust
 Plug 'https://github.com/rust-lang/rust.vim'
 
+" ziglang
+Plug 'https://github.com/ziglang/zig.vim'
+
 call plug#end()
