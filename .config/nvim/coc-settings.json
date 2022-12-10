@@ -1,6 +1,12 @@
 {
-	"suggest.noselect": true,
-	"rust-analyzer.cargo.loadOutDirsFromCheck": true,
-	"coc.preferences.jumpCommand": "tabe"
+  "suggest.noselect": true,
+  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+  "coc.preferences.jumpCommand": "tabe",
+  "languageserver": {
+    "zls" : {
+      "command": "~/zls/zig-out/bin/zls",
+      "filetypes": ["zig"]
+    }
+  }
 }
 
