@@ -2,3 +2,8 @@
 .zsh/completion
 
 .cargo
+
+.DS_Store
+
+# ローカル用設定
+.zshrc.local
