@@ -24,7 +24,7 @@ fpath=(~/.zsh/completion $fpath)
 
 # auto completion
 autoload -Uz compinit
-compinit
+compinit -u
 
 # Use colors
 autoload -Uz colors
