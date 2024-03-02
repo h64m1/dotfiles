@@ -1,0 +1,157 @@
+# dynamic_title = true
+
+[colors.bright]
+black = "#768390"
+blue = "#6cb6ff"
+cyan = "#96d0ff"
+green = "#8ddb8c"
+magenta = "#dcbdfb"
+red = "#f47067"
+white = "#adbac7"
+yellow = "#f69d50"
+
+[colors.normal]
+black = "#2d333b"
+blue = "#6cb6ff"
+cyan = "#96d0ff"
+green = "#8ddb8c"
+magenta = "#dcbdfb"
+red = "#f47067"
+white = "#adbac7"
+yellow = "#f69d50"
+
+[colors.primary]
+background = "#2d333b"
+foreground = "#adbac7"
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 16
+
+[font.bold]
+family = "Source Code Pro for Powerline"
+style = "Bold"
+
+[font.italic]
+family = "Source Code Pro for Powerline"
+style = "Italic"
+
+[font.normal]
+family = "Source Code Pro for Powerline"
+style = "Regular"
+
+[[keyboard.bindings]]
+key = "Comma"
+mods = "Command"
+
+[keyboard.bindings.command]
+args = ["-c", "open ~/.config/alacritty/alacritty.yml"]
+program = "sh"
+
+[[keyboard.bindings]]
+chars = "\u0011d"
+key = "D"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0011c"
+key = "T"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0011%"
+key = "Backslash"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0011\""
+key = "Backslash"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0011x"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ToggleFullScreen"
+key = "Return"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = " "
+key = "Space"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Super"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BOH"
+key = "Left"
+mode = "AppCursor"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BOF"
+key = "Right"
+mode = "AppCursor"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0011["
+key = "PageUp"
+mods = "Shift"
+
+[[keyboard.bindings]]
+chars = "\u0011["
+key = "Home"
+mods = "Shift"
+
+[scrolling]
+history = 10000
+
+[shell]
+args = ["--login"]
+program = "/bin/zsh"
+
+[window]
+decorations = "full"
+
+[window.padding]
+x = 5
+y = 5
