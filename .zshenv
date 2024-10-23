@@ -12,18 +12,14 @@ unsetopt global_rcs
 
 #_______________________________________________________________________________
 # coreutils
-# export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 # M1 mac
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
 #_______________________________________________________________________________
 # golang
-export GOPATH=$HOME/go/1.17.3
-export PATH=$GOPATH/bin:$PATH
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-eval "$(goenv init -)"
+export GOPATH=$HOME/go
+export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
 
 #_______________________________________________________________________________
 # python
@@ -32,7 +28,8 @@ export PATH=$PYENV_ROOT/bin:$PATH
 
 #_______________________________________________________________________________
 # node
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 #_______________________________________________________________________________
 # swift
@@ -49,7 +46,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 #_______________________________________________________________________________
 # editor
-export EDITOR=vim
+export EDITOR=nvim
 
 #_______________________________________________________________________________
 # xcode
