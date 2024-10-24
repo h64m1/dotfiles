@@ -1,4 +1,19 @@
+right_format = """
+$time
+$os
+"""
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%R'
+
+[os]
+format = "[$symbol]($style)"
+disabled = false
+
 [aws]
+disabled = true
 symbol = "  "
 
 [buf]
@@ -33,6 +48,9 @@ symbol = " "
 
 [fossil_branch]
 symbol = " "
+
+[gcloud]
+disabled = true
 
 [git_branch]
 symbol = " "
