@@ -24,7 +24,7 @@ config.keys = {
 }
 
 -- For example, changing the color scheme:
-config.color_scheme = 'AdventureTime'
+config.color_scheme = 'GitHub Dark'
 
 -- and finally, return the configuration to wezterm
 return config
