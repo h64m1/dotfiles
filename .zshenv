@@ -32,6 +32,11 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 #_______________________________________________________________________________
+# claude
+export CLAUDE_HOME="$HOME/.local"
+export PATH="$CLAUDE_HOME/bin:$PATH"
+
+#_______________________________________________________________________________
 # swift
 # SWIFT_BIN=/Library/Developer/Toolchains/swift-latest/usr/bin
 # SWIFT_BIN=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
